@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chattingo-frontend
+  namespace: chattingo
+  labels:
+    app: chattingo-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chattingo-frontend
+  template:
+    metadata:
+      labels:
+        app: chattingo-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: harshavardhan303/chattingo-frontend:latest
+          ports:
+            - containerPort: 80
+          envFrom:
+            - secretRef:
+                name: chattingo-secrets
