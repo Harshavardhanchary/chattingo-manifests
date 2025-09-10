@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: chattingo-frontend
-  namespace: chattingo
   labels:
     app: chattingo-frontend
 spec:
