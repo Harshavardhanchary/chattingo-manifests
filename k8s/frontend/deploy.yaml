@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: harshavardhan303/chattingo-frontend:28
+          image: harshavardhan303/chattingo-frontend:31
           ports:
             - containerPort: 80
           envFrom:
