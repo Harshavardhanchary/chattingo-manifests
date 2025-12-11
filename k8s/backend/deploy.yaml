@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: harshavardhan303/chattingo-backend:27
+          image: harshavardhan303/chattingo-backend:28
           ports:
             - containerPort: 8080
           envFrom:
