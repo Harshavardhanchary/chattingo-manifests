@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # --------------------------
+# Author: Harsha vardhan
 # Script: update-all-yaml.sh
 # Purpose: Update image tags in backend, frontend, and database deploy.yaml files
 # Usage: ./update-all-yaml.sh <build-number>
